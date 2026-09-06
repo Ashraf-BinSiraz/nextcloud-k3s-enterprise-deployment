@@ -1,0 +1,7 @@
+
+# Funnel on:
+#     - https://gilravager.bongo-shiner.ts.net
+
+https://gilravager.bongo-shiner.ts.net (Funnel on)
+|-- / proxy http://127.0.0.1:11000
+

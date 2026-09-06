@@ -1,0 +1,19 @@
+UNIT FILE                            STATE   PRESET
+getty@.service                       enabled enabled
+k3s.service                          enabled disabled
+nfs-server.service                   enabled disabled
+sshd.service                         enabled disabled
+systemd-network-generator.service    enabled enabled
+systemd-networkd-wait-online.service enabled enabled
+systemd-networkd.service             enabled enabled
+systemd-resolved.service             enabled enabled
+tailscaled.service                   enabled disabled
+systemd-networkd-resolve-hook.socket enabled disabled
+systemd-networkd-varlink.socket      enabled disabled
+systemd-networkd.socket              enabled disabled
+systemd-resolved-monitor.socket      enabled disabled
+systemd-resolved-varlink.socket      enabled disabled
+systemd-userdbd.socket               enabled enabled
+remote-fs.target                     enabled enabled
+
+16 unit files listed.

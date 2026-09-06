@@ -1,0 +1,21 @@
+NAME                                               PROVISIONER                                                 RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+storageclass.storage.k8s.io/local-path (default)   rancher.io/local-path                                       Delete          WaitForFirstConsumer   false                  19d
+storageclass.storage.k8s.io/nfs-client (default)   cluster.local/nfs-storage-nfs-subdir-external-provisioner   Delete          Immediate              true                   18d
+
+NAME                                                        CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                                             STORAGECLASS   VOLUMEATTRIBUTESCLASS   REASON   AGE
+persistentvolume/pvc-1bb2cd02-5809-4dc3-94e6-b1c4f747093f   5Gi        RWX            Delete           Bound    default/nextcloud-aio-nextcloud                   nfs-client     <unset>                          15d
+persistentvolume/pvc-3c9f96e1-b227-46a4-8b84-37f5874962c7   1Gi        RWO            Delete           Bound    default/nextcloud-aio-database-dump               nfs-client     <unset>                          15d
+persistentvolume/pvc-3e0083e3-5e34-479a-b480-f6e174634549   1Gi        RWO            Delete           Bound    default/nextcloud-aio-redis                       nfs-client     <unset>                          15d
+persistentvolume/pvc-5433e0fb-0ffc-4b3c-b617-56f35bbc3320   1Gi        RWO            Delete           Bound    default/nextcloud-aio-apache                      nfs-client     <unset>                          15d
+persistentvolume/pvc-7646a660-b117-4504-921d-668883f915cb   1Gi        RWO            Delete           Bound    default/nextcloud-aio-nextcloud-trusted-cacerts   nfs-client     <unset>                          15d
+persistentvolume/pvc-86c6c0fb-79e5-4c0c-b7fb-6cfb7dd91084   1Gi        RWO            Delete           Bound    default/nextcloud-aio-database                    nfs-client     <unset>                          15d
+persistentvolume/pvc-dcb7b3f0-1845-4c18-9c23-282633e58756   5Gi        RWO            Delete           Bound    default/nextcloud-aio-nextcloud-data              nfs-client     <unset>                          15d
+
+NAMESPACE   NAME                                                            STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+default     persistentvolumeclaim/nextcloud-aio-apache                      Bound    pvc-5433e0fb-0ffc-4b3c-b617-56f35bbc3320   1Gi        RWO            nfs-client     <unset>                 15d
+default     persistentvolumeclaim/nextcloud-aio-database                    Bound    pvc-86c6c0fb-79e5-4c0c-b7fb-6cfb7dd91084   1Gi        RWO            nfs-client     <unset>                 15d
+default     persistentvolumeclaim/nextcloud-aio-database-dump               Bound    pvc-3c9f96e1-b227-46a4-8b84-37f5874962c7   1Gi        RWO            nfs-client     <unset>                 15d
+default     persistentvolumeclaim/nextcloud-aio-nextcloud                   Bound    pvc-1bb2cd02-5809-4dc3-94e6-b1c4f747093f   5Gi        RWX            nfs-client     <unset>                 15d
+default     persistentvolumeclaim/nextcloud-aio-nextcloud-data              Bound    pvc-dcb7b3f0-1845-4c18-9c23-282633e58756   5Gi        RWO            nfs-client     <unset>                 15d
+default     persistentvolumeclaim/nextcloud-aio-nextcloud-trusted-cacerts   Bound    pvc-7646a660-b117-4504-921d-668883f915cb   1Gi        RWO            nfs-client     <unset>                 15d
+default     persistentvolumeclaim/nextcloud-aio-redis                       Bound    pvc-3e0083e3-5e34-479a-b480-f6e174634549   1Gi        RWO            nfs-client     <unset>                 15d

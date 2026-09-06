@@ -1,0 +1,15 @@
+NAMESPACE     NAME                                                           READY   STATUS      RESTARTS      AGE   IP            NODE         NOMINATED NODE   READINESS GATES
+default       nextcloud-aio-apache-7747fdb8f9-sfv8b                          1/1     Running     0             9d    10.42.0.153   gilravager   <none>           <none>
+default       nextcloud-aio-database-5ddc76c84-78jql                         1/1     Running     3 (9d ago)    15d   10.42.0.151   gilravager   <none>           <none>
+default       nextcloud-aio-nextcloud-64f7fc9fbc-q7kk5                       1/1     Running     3 (9d ago)    15d   10.42.0.145   gilravager   <none>           <none>
+default       nextcloud-aio-notify-push-99955d4f-lrr8s                       1/1     Running     3 (9d ago)    15d   10.42.0.148   gilravager   <none>           <none>
+default       nextcloud-aio-redis-597bcbbcfd-zhhrz                           1/1     Running     3 (9d ago)    15d   10.42.0.152   gilravager   <none>           <none>
+default       nfs-storage-nfs-subdir-external-provisioner-66dc744b7d-74jp5   1/1     Running     9 (9d ago)    17d   10.42.0.150   gilravager   <none>           <none>
+kube-system   coredns-54996dc9b4-68zfw                                       1/1     Running     12 (9d ago)   19d   10.42.0.141   gilravager   <none>           <none>
+kube-system   helm-install-traefik-8jt4m                                     0/1     Completed   1 (19d ago)   19d   <none>        gilravager   <none>           <none>
+kube-system   helm-install-traefik-crd-jkwst                                 0/1     Completed   0             19d   <none>        gilravager   <none>           <none>
+kube-system   local-path-provisioner-58d557dc48-hlm5t                        1/1     Running     12 (9d ago)   19d   10.42.0.147   gilravager   <none>           <none>
+kube-system   metrics-server-6dc596dfb8-d6cls                                1/1     Running     12 (9d ago)   19d   10.42.0.149   gilravager   <none>           <none>
+kube-system   svclb-nextcloud-aio-apache-ccd20249-cbqq6                      2/2     Running     6 (9d ago)    15d   10.42.0.143   gilravager   <none>           <none>
+kube-system   svclb-traefik-e6fa1074-r6rm2                                   2/2     Running     24 (9d ago)   19d   10.42.0.144   gilravager   <none>           <none>
+kube-system   traefik-59b7647586-nzrhn                                       1/1     Running     13 (9d ago)   19d   10.42.0.146   gilravager   <none>           <none>
