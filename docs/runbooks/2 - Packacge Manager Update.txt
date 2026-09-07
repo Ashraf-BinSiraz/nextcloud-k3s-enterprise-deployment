@@ -36,10 +36,10 @@
 
 	2. Copy the key.
 
-	3. THE KEY: tskey-auth-khwDFBf6Bz11CNTRL-XcL79w7yAqQq49ZJMb1xpQNhtE8P8Azz
+	3. THE KEY: tskey-auth-<REDACTED>
 
 	4. Use the following command to link the login with the tailscale daemon:
-		sudo tailscale up --authkey=tskey-auth-khwDFBf6Bz11CNTRL-XcL79w7yAqQq49ZJMb1xpQNhtE8P8Azz
+		sudo tailscale up --authkey=tskey-auth-<REDACTED>
 
 	5. TO VERIFY:
 		systemctl status tailscaled
